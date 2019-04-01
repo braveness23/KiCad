@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name DSP_Hat-rescue)(type Legacy)(uri ${KIPRJMOD}/DSP_Hat-rescue.lib)(options "")(descr ""))
+)
