@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name DSP_Hat)(type KiCad)(uri /home/dave/Documents/KiCad/DSP_Hat)(options "")(descr ""))
+)
