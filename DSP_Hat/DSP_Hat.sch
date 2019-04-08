@@ -589,22 +589,6 @@ Connection ~ 6550 6000
 Wire Wire Line
 	6050 6500 6550 6500
 Connection ~ 6550 6500
-Wire Wire Line
-	8800 4050 8900 4050
-Wire Wire Line
-	8800 4150 8900 4150
-Wire Wire Line
-	8800 4350 8900 4350
-Wire Wire Line
-	8800 4450 8900 4450
-Text Label 8900 4050 0    50   ~ 0
-LOUTP
-Text Label 8900 4150 0    50   ~ 0
-LOUTN
-Text Label 8900 4350 0    50   ~ 0
-ROUTP
-Text Label 8900 4450 0    50   ~ 0
-ROUTN
 $Comp
 L power:GND #PWR?
 U 1 1 5CB4CBDC
@@ -839,4 +823,136 @@ F 3 "" H 2450 4550 50  0001 C CNN
 	1    2450 4550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:AudioJack2_Ground_Switch J?
+U 1 1 5CCA20D9
+P 10750 3500
+F 0 "J?" H 10780 3925 50  0000 C CNN
+F 1 "AudioJack2_Ground_Switch" H 10780 3834 50  0000 C CNN
+F 2 "" H 10750 3700 50  0001 C CNN
+F 3 "~" H 10750 3700 50  0001 C CNN
+	1    10750 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CCA2325
+P 10750 3350
+F 0 "#PWR?" H 10750 3100 50  0001 C CNN
+F 1 "GND" H 10755 3177 50  0000 C CNN
+F 2 "" H 10750 3350 50  0001 C CNN
+F 3 "" H 10750 3350 50  0001 C CNN
+	1    10750 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5CCA2D40
+P 9100 3600
+F 0 "C?" V 9355 3600 50  0000 C CNN
+F 1 "CP" V 9264 3600 50  0000 C CNN
+F 2 "" H 9138 3450 50  0001 C CNN
+F 3 "~" H 9100 3600 50  0001 C CNN
+	1    9100 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8800 3600 8950 3600
+Wire Wire Line
+	10300 3850 10550 3850
+$Comp
+L Device:CP C?
+U 1 1 5CCCE97F
+P 9500 3700
+F 0 "C?" V 9755 3700 50  0000 C CNN
+F 1 "CP" V 9664 3700 50  0000 C CNN
+F 2 "" H 9538 3550 50  0001 C CNN
+F 3 "~" H 9500 3700 50  0001 C CNN
+	1    9500 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8800 3700 9350 3700
+Wire Wire Line
+	9300 3500 10550 3500
+Wire Wire Line
+	10550 3400 10400 3400
+Wire Wire Line
+	10550 3600 10400 3600
+Text Label 10400 3400 2    50   ~ 0
+HP_LEFT_LOOP
+Text Label 10400 3600 2    50   ~ 0
+HP_RIGHT_LOOP
+$Comp
+L power:GND #PWR?
+U 1 1 5CCF5B0C
+P 9700 4200
+F 0 "#PWR?" H 9700 3950 50  0001 C CNN
+F 1 "GND" H 9705 4027 50  0000 C CNN
+F 2 "" H 9700 4200 50  0001 C CNN
+F 3 "" H 9700 4200 50  0001 C CNN
+	1    9700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CCF5BDB
+P 9700 3950
+F 0 "R?" H 9630 3904 50  0000 R CNN
+F 1 "R" H 9630 3995 50  0000 R CNN
+F 2 "" V 9630 3950 50  0001 C CNN
+F 3 "~" H 9700 3950 50  0001 C CNN
+	1    9700 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CCF5E35
+P 9300 3950
+F 0 "R?" H 9230 3904 50  0000 R CNN
+F 1 "R" H 9230 3995 50  0000 R CNN
+F 2 "" V 9230 3950 50  0001 C CNN
+F 3 "~" H 9300 3950 50  0001 C CNN
+	1    9300 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9700 4100 9700 4150
+Wire Wire Line
+	9700 3800 9700 3700
+Wire Wire Line
+	9700 3700 10550 3700
+Wire Wire Line
+	9300 4100 9300 4150
+Wire Wire Line
+	9300 4150 9700 4150
+Connection ~ 9700 4150
+Wire Wire Line
+	9700 4150 9700 4200
+Wire Wire Line
+	9300 3800 9300 3600
+Wire Wire Line
+	9250 3600 9300 3600
+Connection ~ 9300 3600
+Wire Wire Line
+	9300 3600 9300 3500
+Wire Wire Line
+	9650 3700 9700 3700
+Connection ~ 9700 3700
+Wire Wire Line
+	8800 5100 9000 5100
+Wire Wire Line
+	8800 5000 9000 5000
+Wire Wire Line
+	8800 4750 9000 4750
+Wire Wire Line
+	8800 4650 9000 4650
+Text Label 9000 4650 0    50   ~ 0
+LOUTP
+Text Label 9000 4750 0    50   ~ 0
+LOUTN
+Text Label 9000 5000 0    50   ~ 0
+ROUTP
+Text Label 9000 5100 0    50   ~ 0
+ROUTN
 $EndSCHEMATC
